@@ -2,9 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Alunos</title>
+        <title>Coppe</title>
     </head>
+
+    <script>
+        function home(){
+            window.location.href = "http://localhost:5006/aluno/add";
+        }
+    </script>
+
     <body>
-        <h1> Lista de alunos</h1>
+        <h1>Avaliação Coppe</h1>
+        
+        <br><button type="submit" onclick="home()">Cadastrar Aluno</button><br>
+        <br>
+        <form method="GET" action="/alunos">
+            <button type="submit">Ver informações de um aluno</button>
+        </form>
+        <br>
+        <form method="GET" action="/gerais">
+            <button type="submit" onclick="home()">Informações gerais</button>
+        </form>
     </body>
 </html>

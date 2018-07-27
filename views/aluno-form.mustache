@@ -8,16 +8,25 @@
         <h1> Cadastro de alunos</h1>
 
         <form method="POST" action="/aluno/add">
-            <input placeholder="id_aluno" name="id_aluno" />
-            <input placeholder="nome" name="nome" />
-            <input placeholder="matricula" name="matricula" />
-            <input placeholder="endereco_id" name="endereco_id" />
-            <input placeholder="nota" name="nota" />
+            <input placeholder="id_aluno" name="id_aluno" /><br><br>
+            <input placeholder="nome" name="nome" /><br><br>
+            <input placeholder="matricula" name="matricula" /><br><br>
+            <input placeholder="endereco_id" name="endereco_id" /><br><br>
+            <input placeholder="nota" name="nota" /><br><br>
             <button type="submit">cadastrar</button>
         </form>
+        <br><br><br>
+        <!-- ALL OTHER FUNCTIONS-->
+        <form method="POST" action="/endereco-list">
+            <button>Se não souber, consulte ou cadastre um novo</button>
+        </form><br><br>
 
         <form method="GET" action="/alunos">
-            <button type="submit">informação de um aluno</button>
+            <button type="submit">Ver informações de um aluno</button>
+        </form>
+        <br>
+        <form method="GET" action="/gerais">
+            <button type="submit">Informações gerais dos alunos</button>
         </form>
 
     </body>

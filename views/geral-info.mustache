@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alunos</title>
+    </head>
+    <body>
+        <h1>INFORMAÇÕES GERAIS</h1><br>
+        <br>
+
+        
+        <script>
+            function home(){
+                window.location.href = "http://localhost:5006/aluno/add";
+            }
+        </script>
+
+        <form method="POST" action="/gerais">
+            <button type="submit" >VER QUANTIDADE TOTAL DE ALUNOS:</button><br>
+        </form>
+
+        {{#rows}}
+        <tr>
+           <td> {{alunosporbairro}} alunos do bairro:  <b>{{bairro}}</b> a média dos alunos é -> "{{media}}"  </td> <br>
+           <h1>{{qtde}}</h1>
+        </tr>
+        {{/rows}}
+
+
+        <br>
+        <button type="submit" onclick="home()">TELA INICIAL</button><br>
+        
+
+
+
+    </body>
+</html>

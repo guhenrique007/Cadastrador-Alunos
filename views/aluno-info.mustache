@@ -4,18 +4,29 @@
         <meta charset="utf-8">
         <title>Alunos</title>
     </head>
+
+   <script>
+            function home(){
+                window.location.href = "http://localhost:5006/aluno/add";
+            }
+    </script>
+
     <body>
         <h1>INFORMAÇÕES DO ALUNO</h1><br>
         <br>
         <table>
         {{#rows}}
-            {{id}}
-            {{nome}}
-            {{matricula}}
-            {{nota}}
-            {{endereco_id}}
+            [ Nome ]         {{nome}}<br>
+            [ Matrícula ]    {{matricula}}<br>
+            [ Nota ]         {{nota}}<br>
+            [ Rua ]          {{rua}}<br>
+            [ Bairro ]       {{bairro}}<br>
+            [ Complemento ]  {{numero}}<br>  
         {{/rows}}
         </table>
+
+     <br>
+        <button type="submit" onclick="home()">TELA INICIAL</button><br>
 
     </body>
 </html>

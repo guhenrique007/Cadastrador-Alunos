@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Endereco</title>
+    </head>
+
+     <script>
+            function home(){
+                window.location.href = "http://localhost:5006/aluno/add";
+            }
+    </script>
+
+    <body>
+        <b>Endereços da nossa base de dados:</b><br><br>
+        {{#rows}}
+            [ id ] {{id}} - Rua {{rua}},{{numero}}/ {{bairro}}<br>
+        {{/rows}}
+        <br><br><br>
+        <b>CADASTRE UM NOVO ENDEREÇO:</b><br><br>
+        <form method="POST" action="/endereco/add">
+            <input placeholder="id_endereco" name="id_endereco" /><br><br>
+            <input placeholder="Rua" name="rua" /><br><br>
+            <input placeholder="Complemento" name="numero" /><br><br>
+            <input placeholder="Bairro" name="bairro" />
+            <button type="submit">cadastrar</button>
+        </form>
+
+         <br>
+        <button type="submit" onclick="home()">TELA INICIAL</button><br>
+        
+    </body>
+
+
+</html>
