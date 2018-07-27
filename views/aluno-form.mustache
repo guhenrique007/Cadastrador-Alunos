@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alunos</title>
+    </head>
+    <body>
+        <h1> Cadastro de alunos</h1>
+
+        <form method="POST" action="/aluno/add">
+            <input placeholder="id_aluno" name="id_aluno" />
+            <input placeholder="nome" name="nome" />
+            <input placeholder="matricula" name="matricula" />
+            <input placeholder="endereco_id" name="endereco_id" />
+            <input placeholder="nota" name="nota" />
+            <button type="submit">cadastrar</button>
+        </form>
+
+        <form method="GET" action="/alunos">
+            <button type="submit">informação de um aluno</button>
+        </form>
+
+    </body>
+</html>

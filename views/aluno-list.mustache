@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Alunos</title>
+    </head>
+    <body>
+        <h1>Lista de alunos</h1><br>
+        Escolha um aluno<br>
+        <table>
+        {{#rows}}
+            <tr>
+                <td>
+                    <form method="POST" action="/teste">
+                        <input placeholder="id_aluno" name="id_aluno" value={{id}} readonly />
+                        <input placeholder="nome" name="nome" value={{nome}} readonly />
+                        <button type="submit">exibir mais informações</button><br>
+                    </form>
+                </td>
+            </tr>
+        {{/rows}}
+        </table>
+
+    </body>
+</html>
