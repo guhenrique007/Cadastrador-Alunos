@@ -8,6 +8,8 @@
 
   `npm install dotenv --save`
 
+  `npm install mustache --save`
+
   `npm install express --save`
 
 3- Run
@@ -18,7 +20,7 @@
    
 P.S.:
 
-      The file contains the initial settings, like a port,password db,etc.
+      The file `.env` contains the initial settings, like a port,password db,etc.
       
   
   
